@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root{
+        --dark-blue-mainbg:233 47% 7%;
+        --desaturated-blue-cardbg: 244 38% 16%;
+        --soft-violet:277 64% 61%;
+        
+        --white-mainheading:0 0% 100%;
+        --white-main-paragraph:0 0% 100%;
+        --white-stat-headings:0 0% 100%;
+    }
+}
+@layer components{
+
+    .stats-text{
+        @apply uppercase mb-4 font-lexendDeca text-statHeadingColor text-xs tracking-widest  text-center
+    }
+    .stats{
+        @apply font-bold text-lg lowercase text-whiteHeading block font-inter
+    }
+    
+}
